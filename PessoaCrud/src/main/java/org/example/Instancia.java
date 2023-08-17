@@ -20,39 +20,55 @@ public class Instancia {
     public static ArrayList<Alimento> gerarAlimentos(){
         ArrayList<Alimento> alimentoArrayList = new ArrayList<>();
 
-        alimentoArrayList.add(new Alimento(Global.gerarAleatorioCodigo(),"Arroz", "Plantado e colhido no Japão.",15,20,10,Global.gerarAleatorio0a4(),true,"Cereais","Minda", EnumUnidadeDeMedida.QUILO, 5));
-        alimentoArrayList.add(new Alimento(Global.gerarAleatorioCodigo(),"Feijão", "Plantado e colhido na China.",30,45,10,Global.gerarAleatorio0a4(),true,"Cereais","Não sei", EnumUnidadeDeMedida.QUILO, 5));
+        alimentoArrayList.add(new Alimento(Global.gerarAleatorioCodigo(),"Arroz", "Plantado e colhido no Japão.",
+                15,20,10,Global.gerarAleatorio0a4(),true,"Cereais",
+                "Minda", EnumUnidadeDeMedida.QUILO, 5));
+
+        alimentoArrayList.add(new Alimento(Global.gerarAleatorioCodigo(),"Feijão", "Plantado e colhido na China."
+                ,30,45,10,Global.gerarAleatorio0a4(),true,"Cereais"
+                ,"Não sei", EnumUnidadeDeMedida.QUILO, 5));
 
         return alimentoArrayList;
     };
-
     public static ArrayList<Produto> gerarProduto(){
         ArrayList<Produto> produtoArrayList = new ArrayList<>();
 
-        produtoArrayList.add(new Produto(Global.gerarAleatorioCodigo(),"Papel Higiênico", "Folha Dupla",30.00,45.60,6,Global.gerarAleatorio0a4(),true,"Higiene Pessoal"));
-        produtoArrayList.add(new Produto(Global.gerarAleatorioCodigo(),"Boneca de Pano", "Feito totalmente de pano",80,100,7,Global.gerarAleatorio0a4(),true,"Brinquedos"));
+        produtoArrayList.add(new Produto(Global.gerarAleatorioCodigo(),"Papel Higiênico", "Folha Dupla",
+                30.00,45.60,6,Global.gerarAleatorio0a4(),true,"Higiene Pessoal"));
+
+        produtoArrayList.add(new Produto(Global.gerarAleatorioCodigo(),"Boneca de Pano", "Feito totalmente de pano"
+                ,80,100,7,Global.gerarAleatorio0a4(),true,"Brinquedos"));
 
         return produtoArrayList;
     };
-
     public static ArrayList<Livro> gerarlivro(){
         ArrayList<Livro> livroArrayList = new ArrayList<>();
 
-        livroArrayList.add(new Livro(Global.gerarAleatorioCodigo(),"Alice no País das Maravílhias", "Livro de capa dura",17.63,35.00,15,Global.gerarAleatorio0a4(),true,"Fantasias","Lewis Carroll","Uma menina, um coelho e uma história capazes de fazer qualquer um de nós voltar a sonhar. Alice é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso...","Darkside"));
-        livroArrayList.add(new Livro(Global.gerarAleatorioCodigo(),"Cristianismo Puro e Simples", "Livro de capa dura",20,39.99,13,Global.gerarAleatorio0a4(),true,"Religioso","C.S. Lewis","Em um dos períodos mais sombrios da humanidade, a Segunda Guerra Mundial, C.S. Lewis foi convidado pela BBC a fazer uma série de palestras pelo rádio com o intuito de explicar bases da fé cristã de forma simples e clara. Mais tarde, ajustado pelo próprio Lewis, esse material daria origem a Cristianismo puro e simples, um grande clássico da literatura cristã.","Thomas Nelson"));
+        livroArrayList.add(new Livro(Global.gerarAleatorioCodigo(),"Alice no País das Maravílhias", "Livro de capa dura"
+                ,17.63,35.00,15,Global.gerarAleatorio0a4(),true,"Fantasias"
+                ,"Lewis Carroll","Uma menina, um coelho e uma história capazes de fazer qualquer um ... ","Darkside"));
+
+        livroArrayList.add(new Livro(Global.gerarAleatorioCodigo(),"Cristianismo Puro e Simples", "Livro de capa dura"
+                ,20,39.99,13,Global.gerarAleatorio0a4(),true,"Religioso",
+                "C.S. Lewis","Em um dos períodos mais sombrios da humanidlestras pelo rádio coa simp...","Thomas Nelson"));
 
         return livroArrayList;
     };
-
     public static ArrayList<Eletronico> gerarEletronico(){
         ArrayList<Eletronico> eletronicoArrayList = new ArrayList<>();
 
-        eletronicoArrayList.add(new Eletronico(Global.gerarAleatorioCodigo(),"Liquidificador", "Usado para diversas funções, onde precisa processar algum tipo de alimento.",53.81,89.90,12,Global.gerarAleatorio0a4(),true,"Eletrodomésticos para Cozinha","Philco","Reverse PLQ1300","Vermelho","Altura: 41,90cm, Largura: 20,80cm, Profundidade: 22,70cm, Peso: 2,14Kg"));
-        eletronicoArrayList.add(new Eletronico(Global.gerarAleatorioCodigo(),"Carregador de celular tipo c", "Usado para aparelhos que possuem a entrada tipo C",15,23.90,8,Global.gerarAleatorio0a4(),true,"Carregadores","GShield","Tipo C","Preto","Carregamento rápido. 3 portas USB"));
+        eletronicoArrayList.add(new Eletronico(Global.gerarAleatorioCodigo(),"Liquidificador", "Usado para diversas " +
+                "funções, onde precisa processar algum tipo de alimento.",53.81,89.90,12,
+                Global.gerarAleatorio0a4(),true,"Eletrodomésticos para Cozinha","Philco","Reverse PLQ1300",
+                "Vermelho","Altura: 41,90cm, Largura: 20,80cm, Profundidade: 22,70cm, Peso: 2,14Kg"));
+
+        eletronicoArrayList.add(new Eletronico(Global.gerarAleatorioCodigo(),"Carregador de celular tipo c",
+                "Usado para aparelhos que possuem a entrada tipo C",15,23.90,8,
+                Global.gerarAleatorio0a4(),true,"Carregadores","GShield","Tipo C","Preto",
+                "Carregamento rápido. 3 portas USB"));
 
         return eletronicoArrayList;
     };
-
     public static void exibirProdutos (ArrayList<? extends ProdutoBase> arrayClazz) {
         int i = 1;
         for (ProdutoBase produto : arrayClazz) {
@@ -62,7 +78,6 @@ public class Instancia {
             i++;
         }
     }
-
     public static Alimento criarAlimento(String nome,String descricao,double precoDeCompra,double precoDeVenda,double maxDesconto, double estoque) {
         Scanner scan = new Scanner(System.in);
 
@@ -86,11 +101,12 @@ public class Instancia {
         System.out.print("Peso em "+enumUnidadeDeMedida.toString()+": ");
         double peso = scan.nextDouble();
 
-        Alimento alimento = new Alimento(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,precoDeVenda,maxDesconto,estoque,true,categoria,marca,enumUnidadeDeMedida,peso);
+        Alimento alimento = new Alimento(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,
+                precoDeVenda,maxDesconto,estoque,true,categoria,marca,enumUnidadeDeMedida,peso);
+
         alimento.setVendavel(Vendavel.verificarVendavel(alimento));
         return alimento;
     }
-
     public static Livro criarLivro(String nome,String descricao,double precoDeCompra,double precoDeVenda,double maxDesconto,double estoque) {
         Scanner scan = new Scanner(System.in);
 
@@ -103,11 +119,12 @@ public class Instancia {
         System.out.print("Editora: ");
         String editora = scan.next();
 
-        Livro livro = new Livro(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,precoDeVenda,maxDesconto,estoque,true,categoria,autor,sinopse, editora);
+        Livro livro = new Livro(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,precoDeVenda
+                ,maxDesconto,estoque,true,categoria,autor,sinopse, editora);
+
         livro.setVendavel(Vendavel.verificarVendavel(livro));
         return livro;
     }
-
     public static Eletronico criarEletronico(String nome,String descricao,double precoDeCompra,double precoDeVenda,double maxDesconto,double estoque) {
         Scanner scan = new Scanner(System.in);
 
@@ -122,11 +139,12 @@ public class Instancia {
         System.out.print("Especificações: ");
         String especificacoes = scan.nextLine();
 
-        Eletronico eletronico = new Eletronico(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,precoDeVenda,maxDesconto,estoque,true,categoria,marca,modelo,cor,especificacoes);
+        Eletronico eletronico = new Eletronico(Global.gerarAleatorioCodigo(),nome,descricao,precoDeCompra,precoDeVenda,
+                maxDesconto,estoque,true,categoria,marca,modelo,cor,especificacoes);
+
         eletronico.setVendavel(Vendavel.verificarVendavel(eletronico));
         return eletronico;
     }
-
     public static Produto criarProduto(String nome,String descricao,double precoDeCompra,double precoDeVenda,double maxDesconto,double estoque) {
         Scanner scan = new Scanner(System.in);
 
@@ -138,7 +156,6 @@ public class Instancia {
         produto.setVendavel(Vendavel.verificarVendavel(produto));
         return produto;
     }
-
     public static int selecionarProdutoParaEditar (ArrayList<? extends ProdutoBase> arrayList) {
         Scanner scan = new Scanner(System.in);
 
@@ -155,7 +172,6 @@ public class Instancia {
 
         return resposta-1;
     }
-
     public static Livro editarLivro(Livro livro) {
         Scanner scan = new Scanner(System.in);
 
@@ -227,7 +243,6 @@ public class Instancia {
 
         return livro;
     }
-
     public static Eletronico editarEletronico(Eletronico produto) {
         Scanner scan = new Scanner(System.in);
 
@@ -304,7 +319,6 @@ public class Instancia {
 
         return produto;
     }
-
     public static Alimento editarAlimento (Alimento produto) {
         Scanner scan = new Scanner(System.in);
 
@@ -394,7 +408,6 @@ public class Instancia {
 
         return produto;
     }
-
     public static Produto editarProduto (Produto produto) {
         Scanner scan = new Scanner(System.in);
 
@@ -456,12 +469,10 @@ public class Instancia {
 
         return produto;
     }
-
     public static void excluirProdutos (int numeroProduto, ArrayList<? extends ProdutoBase> arrayList) {
         arrayList.remove(numeroProduto);
         System.out.println("\nExcluído produto com sucesso!");
     }
-
     public static void definirVendavel (int numeroProduto, ArrayList<? extends ProdutoBase> arrayList) {
         arrayList.get(numeroProduto).setVendavel(Vendavel.verificarVendavel(arrayList.get(numeroProduto)));
         System.out.println("\nDefinido com sucesso com base na quantidade em estoque!\n Definido para "+arrayList.get(numeroProduto).isVendavel());

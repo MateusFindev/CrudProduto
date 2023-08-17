@@ -12,8 +12,9 @@ public abstract class ProdutoBase implements Vendavel{
 
 
     public String imprimirDadosInicias() {
-        return "Codigo Produto: " + codigo + "  |  Nome Produto: " + nomeProduto + "  |  Descricao: " + descricao + "  |  Estoque: "+estoque+
-                "  ---  PrecoCompra: " + precoCompra + "  |  Preco Venda: " + precoVenda + "  |  Desconto Porcentagem Máxima: " + descontoPorcentagemMax+"  |  Vendavel: "+vendavel+"\n" ;
+        return "Codigo Produto: " + codigo + "  |  Nome Produto: " + nomeProduto + "  |  Descricao: " + descricao +
+                "  |  Estoque: "+estoque+ "  ---  PrecoCompra: " + precoCompra + "  |  Preco Venda: " + precoVenda +
+                "  |  Desconto Porcentagem Máxima: " + descontoPorcentagemMax+"  |  Vendavel: "+vendavel+"\n" ;
     }
 
 

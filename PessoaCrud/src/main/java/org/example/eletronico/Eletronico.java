@@ -11,7 +11,8 @@ public class Eletronico extends ProdutoBase {
 
     @Override
     public String toString() {
-        return imprimirDadosInicias() + "Categoria Eletrônico: " + categoriaElemento + "  |  Marca: " + marca + "  |  Modelo: " + modelo +"  |  Cor: " + cor + "  |  Especificacoes: " + especificacoes;
+        return imprimirDadosInicias() + "Categoria Eletrônico: " + categoriaElemento + "  |  Marca: " + marca +
+                "  |  Modelo: " + modelo +"  |  Cor: " + cor + "  |  Especificacoes: " + especificacoes;
     }
 
 

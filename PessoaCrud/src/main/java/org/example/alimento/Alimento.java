@@ -11,7 +11,8 @@ public class Alimento extends ProdutoBase{
 
     @Override
     public String toString() {
-        return imprimirDadosInicias() + "Categoria Alimento: "+categoriaAlimento +"   |   Marca: " + marca +"   |   Quantidade: " + quantidade +" "+ unidadeDeMedida;
+        return imprimirDadosInicias() + "Categoria Alimento: "+categoriaAlimento +"   |   Marca: " + marca +
+                "   |   Quantidade: " + quantidade +" "+ unidadeDeMedida;
     }
 
 

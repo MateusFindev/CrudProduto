@@ -10,7 +10,8 @@ public class Livro extends ProdutoBase {
 
     @Override
     public String toString() {
-        return imprimirDadosInicias() + "Categoria Livro: " + categoriaLivro + "  |  Autor: " + autor + "  |  Editora: " + editora + "\nSinopse: " + sinopse;
+        return imprimirDadosInicias() + "Categoria Livro: " + categoriaLivro + "  |  Autor: " + autor +
+                "  |  Editora: " + editora + "\nSinopse: " + sinopse;
     }
 
     // ---- CONSTRUCTOR ----
